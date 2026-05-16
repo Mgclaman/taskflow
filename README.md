@@ -10,7 +10,7 @@ Manage projects, assign tasks, track progress, and collaborate with your team â€
 
 | Service | URL |
 |---------|-----|
-| Live Application Url | https://task-flows-production.up.railway.app/ |
+| Live Application Url | https://frontend-production-3ff4.up.railway.app/ |
 
 
 ---
