@@ -53,6 +53,11 @@ app.use('/api/projects', projectRoutes);
 app.use('/api/projects/:projectId/tasks', taskRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 
+// Root route
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully 🚀");
+});
+
 // 404 handler
 app.use((req, res) => res.status(404).json({ error: 'Route not found' }));
 
