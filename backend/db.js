@@ -4,7 +4,8 @@ const bcrypt = require('bcryptjs');
 const { v4: uuidv4 } = require('uuid');
 
 const db = createClient({
-  url: process.env.DATABASE_URL || `file:${path.join(__dirname, 'taskflow.db')}`,
+  url: process.env.DATABASE_URL || `file:${path.join(__dirname, 'taskflow.db')}`,
+  authToken: process.env.DATABASE_AUTH_TOKEN,
 });
 
 const DEMO_EMAIL = 'demo@taskflow.app';
